@@ -1,0 +1,105 @@
+.skip{
+    position: absolute;  
+    top: -25px;
+}
+.skip a:focus{
+    top: 20px;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    display: grid;
+    grid-template-rows: auto 1fr auto;  /* Header, main content, footer */
+    min-height: 100vh;  /* Full height of the screen */
+}
+
+/* Header (with navigation) */
+header {
+    background-color: #00457C;  /* Background color of the header */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #003366;  /* Different background for nav */
+    padding: 10px;
+}
+
+nav ul {
+    display: grid;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: repeat(4, 1fr); /* Create 4 columns for the menu items */
+}
+
+nav ul li {
+    display: flex;  /* Use flex to make links block-level */
+    justify-content: center; /* Center align the link text */
+}
+nav ul li a {
+    display: block;
+    background-color: #00457C;
+    color: white;
+    text-decoration: none;
+    padding: 11px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #00274C;  /* Darken on hover */
+}
+
+/* Main content */
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;  /* Single column for cellphone */
+    gap: 20px;  /* Space between sections */
+}
+
+main section {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+main h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+ol {
+    padding-left: 100px;  /* Add padding to the left of the list items */
+    padding-bottom: 5px;  /* Space between items */
+}
+
+
+/* Footer */
+footer {
+    background-color: #00457C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer p {
+    color: yellow;
+}
