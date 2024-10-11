@@ -2,10 +2,11 @@
     position: absolute;
     left: 10px;  
     top: -20px;
+    color: white;
 }
 .skip a:focus{
     top: 2px;
-    background-color: yellow;
+    background-color: #2F65A7;
     padding: 15px 20px;
     border-radius: 100px;
   }
@@ -20,7 +21,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     display: grid;
-    grid-template-rows: auto auto auto;  /* Header, main content, footer */
+    grid-template-rows: auto auto auto; 
     grid-template-columns: auto ;
 
 }
@@ -28,25 +29,30 @@ body {
 
 /* Header (with navigation) */
 header {
-    background-color: #00457C;  /* Background color of the header */
-    color: white;
+    background-color: #2F65A7;  
+    color: #FFFFFF;
     padding: 10px 20px;
     text-align: center;
     justify-content: space-between;
 }
 header h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    border-bottom: .5px solid white;
+    padding-bottom: 10px;
+
 }
 .logo{
-    width: 14%;
+    width: 65%;
     margin-left: 1px;
 
 }
 
 /* Navigation */
+
 nav {
     padding: 10px;
     text-align: center;
+    
 }
 nav a:hover, nav a:focus {
     text-decoration: underline;
@@ -54,25 +60,27 @@ nav a:hover, nav a:focus {
 
 nav ul {
     display: grid;
-    grid-template-columns: auto auto auto auto; /* One column layout */
+    grid-template-columns: auto auto auto auto;
     gap: 10px;
     padding: 0;
     margin: 0;
+    
 }
-
 
 nav ul li {
     display: flex;  /* Use flex to make links block-level */
     justify-content: center; /* Center align the link text */
+    align-self: center;
 }
 
 nav ul li a {
     display: block;
-    background-color: #00457C;
-    color: white;
+    background-color: #2F65A7;
+    color: #FFFFFF;
     text-decoration: none;
     padding: 11px;
     text-align: center;
+    
     border-radius: 5px;
 }
 
@@ -80,14 +88,12 @@ nav ul li a:hover {
     background-color: #00274C;  /* Darken on hover */
 }
 
-
-
 /* Main content */
 main {
-    padding: 20px;
+    padding: 15px;
     display: grid;
-    grid-template-columns: 1fr;  /* Single column for cellphone */
-    gap: 20px;  /* Space between sections */
+    grid-template-columns: 1fr;
+    gap: 20px;  
 }
 
 section {
@@ -98,7 +104,8 @@ section {
 }
 
 main h2{
-    font-size: 1.65rem;
+    font-size: 1.3rem;
+    
     text-align: center; 
 }
 
@@ -107,7 +114,7 @@ main p {
     margin-bottom: 10px;
 }
 ol {
-    padding-left: 100px;  
+    padding-left: 40px;  
     padding-bottom: 5px;  
 }
 ul {
@@ -124,14 +131,14 @@ img {
 
 /* Footer */
 footer {
-    background-color: #00457C;
-    color: yellow;
+    background-color: #00274C;
+    color: #FFCB05;
     text-align: center;
     padding: 10px;
 }
 footer p {
-    color: yellow;
+    color: #FFCB05;
 }
 footer a {
-    color: yellow;
+    color: #FFCB05;
 }
