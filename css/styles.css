@@ -1,15 +1,17 @@
+
 .skip a {
     position: absolute;
-    left: 10px;  
+    left: 10px;
     top: -20px;
     color: white;
 }
-.skip a:focus{
+
+.skip a:focus {
     top: 2px;
     background-color: #2F65A7;
     padding: 15px 20px;
     border-radius: 100px;
-  }
+}
 
 * {
     margin: 0;
@@ -21,27 +23,29 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     display: grid;
-    grid-template-rows: auto auto auto; 
+    grid-template-rows: auto auto auto;
     grid-template-columns: auto;
 
 }
 
 /* Header (with navigation) */
 header {
-    background-color: #2F65A7;  
+    background-color: #2F65A7;
     color: #FFFFFF;
     padding: 10px 20px;
     text-align: center;
     justify-content: space-between;
     border-bottom: #FFCB05 4px solid;
 }
+
 header h1 {
     font-size: 1.2rem;
     border-bottom: .5px solid white;
     padding-bottom: 10px;
 
 }
-.logo{
+
+.logo {
     width: 65%;
     margin-left: 1px;
 
@@ -52,11 +56,13 @@ header h1 {
 nav {
     padding: 10px;
     text-align: center;
-    
+
 }
-nav a:hover, nav a:focus {
+
+nav a:hover,
+nav a:focus {
     text-decoration: underline;
-  }
+}
 
 nav ul {
     display: grid;
@@ -64,12 +70,12 @@ nav ul {
     gap: 1px;
     padding: 0;
     margin: 0;
-    
+
 }
 
 nav ul li {
-    display: flex;  
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-self: center;
 }
 
@@ -80,12 +86,12 @@ nav ul li a {
     text-decoration: none;
     padding: 11px;
     text-align: center;
-    
+
     border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: #00274C;  
+    background-color: #00274C;
 }
 
 /* Main content */
@@ -93,19 +99,21 @@ main {
     padding: 15px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
     gap: 20px;
 }
 
 .griditem1 {
-    grid-column: span 2 ;
+    grid-column: span 2;
 }
+
 .griditem2 {
     grid-column: 1/ -1;
 }
+
 .griditem3 {
     grid-column: span 2;
 }
+
 section {
     background-color: #f0f0f0;
     padding: 15px;
@@ -113,28 +121,31 @@ section {
 
 }
 
-main h2{
+main h2 {
     font-size: 1.3rem;
-    
-    text-align: center; 
+
+    text-align: center;
 }
 
 main p {
     font-size: 1rem;
     margin-bottom: 10px;
 }
+
 ol {
-    padding-left: 40px;  
-    padding-bottom: 5px;  
+    padding-left: 40px;
+    padding-bottom: 5px;
 }
+
 ul {
     margin-left: 10px;
 }
+
 img {
-    max-width: 100%;  
-    height: auto; 
-    display: block;  
-    margin: 0 auto; 
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -146,9 +157,11 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
 footer p {
     color: #FFCB05;
 }
+
 footer a {
     color: #FFCB05;
 }
