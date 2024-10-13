@@ -22,10 +22,9 @@ body {
     line-height: 1.5;
     display: grid;
     grid-template-rows: auto auto auto; 
-    grid-template-columns: auto ;
+    grid-template-columns: auto;
 
 }
-
 
 /* Header (with navigation) */
 header {
@@ -34,6 +33,7 @@ header {
     padding: 10px 20px;
     text-align: center;
     justify-content: space-between;
+    border-bottom: #FFCB05 4px solid;
 }
 header h1 {
     font-size: 1.2rem;
@@ -61,15 +61,15 @@ nav a:hover, nav a:focus {
 nav ul {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 10px;
+    gap: 1px;
     padding: 0;
     margin: 0;
     
 }
 
 nav ul li {
-    display: flex;  /* Use flex to make links block-level */
-    justify-content: center; /* Center align the link text */
+    display: flex;  
+    justify-content: center; 
     align-self: center;
 }
 
@@ -85,17 +85,27 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #00274C;  /* Darken on hover */
+    background-color: #00274C;  
 }
 
 /* Main content */
 main {
     padding: 15px;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;  
+    grid-template-columns: 1fr 1fr;
+    
+    gap: 20px;
 }
 
+.griditem1 {
+    grid-column: span 2 ;
+}
+.griditem2 {
+    grid-column: 1/ -1;
+}
+.griditem3 {
+    grid-column: span 2;
+}
 section {
     background-color: #f0f0f0;
     padding: 15px;
@@ -121,10 +131,10 @@ ul {
     margin-left: 10px;
 }
 img {
-    max-width: 100%;  /* The image will not be wider than its container */
-    height: auto;  /* The height will automatically adjust to maintain aspect ratio */
-    display: block;  /* Prevents extra space below the image */
-    margin: 0 auto;  /* Centers the image if needed */
+    max-width: 100%;  
+    height: auto; 
+    display: block;  
+    margin: 0 auto; 
     padding: 10px;
 }
 
