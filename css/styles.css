@@ -212,9 +212,6 @@ body {
     padding-right: 10%;
     
 }
-body {
-    cursor: url('path_to_cursor_image.png'), auto;
-}
 .wrapper {
     padding-left: 10%;
     padding-right: 10%;
