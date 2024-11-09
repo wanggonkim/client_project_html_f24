@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
     <title>Student Success Portal</title>
 </head>
 
-<body>
+<body class="wrapper">
     <header>
         <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <div>
@@ -35,16 +36,18 @@
                 academic success by offering a wide array of resources and services. Our academic advising team provides
                 personalized guidance to help you navigate your curriculum, select courses, and address any academic
                 challenges or questions you may encounter during your studies.</p>
+        </div>
+        <section id="Academic Advising" class="griditem2">
             <img src="images/UMSI_FacultyRetirementParty_08102021_001.jpg" alt="North Quad Courtyard View">
             <P>Academic Advising is a process where students envision, execute, and reflect on their academic plans with
                 guidance from a qualified UMSI Academic Advisor. Students share their goals, challenges, and questions
                 with their academic advisor, and their academic advisor contributes knowledge of university and program
                 requirements, policies, and processes. Together, we develop an academic plan that aligns with the
                 student's personal and professional goals.</P>
+        </section>
 
-        </div>
 
-        <section id="Academic Advising" class="griditem1">
+        <section id="Academic Advising">
             <h2>Academic Advising</h2>
             <p>The UMSI Academic Programs and Student Life (APSL) team’s mission is to empower students to think broadly
                 about their education and to create meaningful academic plans and student experiences that will prepare
@@ -57,7 +60,8 @@
                 academic advisor, current students should refer to their program-specific academic advising site. You
                 must be logged into the UMICH Google Suite to access the advising sites.</p>
         </section>
-        <section id="Academic Advising">
+
+        <section id="Advising Academic">
 
             <h2>How can your Academic Advisor help you?</h2>
             <ul>
@@ -74,11 +78,12 @@
             <br>
             <br>
         </section>
-        <div>
-            <section id="contact">
+
+        <section id="contact">
+            <div>
                 <h2>Help! Who do I contact?</h2>
                 <br>
-                <P>UMSI Advising</P>
+                <P>UMSI Advising:</P>
                 <ul>
                     <li>Course Planning</li>
                     <li>Degree Requirements</li>
@@ -89,7 +94,7 @@
                     <li>Referral to Campus Resources</li>
                 </ul>
                 <br>
-                <P>UMSI Academic Success</P>
+                <P>UMSI Academic Success:</P>
                 <ul>
                     <li>UMSI Tutoring</li>
                     <li>Mental Health & Well-Being Resources</li>
@@ -98,27 +103,34 @@
                     <li>Academic Success Resources</li>
                     <li>Peer Mentorship</li>
                 </ul>
+            </div>
+        </section>
+        <section id="contact" class="griditem3">
+            <div>
+                <h2>UMSI Registrar & Student Service</h2>
                 <br>
-                <P>UMSI Registrar & Student Services</P>
+                <P>UMSI Advising:</P>
                 <ul>
                     <li>Course Waitlists/Overrides</li>
-                    <li>Enrollment Permissions</li>
-                    <li>Course Waivers</li>
-                    <li>Proof of Enrollment</li>
-                    <li>Course Offerings</li>
-                    <li>Letter Requests(RCL,OPT,etc.)</li>
+                    <li>Degree Requirements</li>
+                    <li>Dual-Degree Planning</li>
+                    <li>Add/Drop & Withdrawls</li>
+                    <li>Petitions</li>
+                    <li>I-20 Extensions</li>
+                    <li>Referral to Campus Resources</li>
                 </ul>
                 <br>
-                <P>UMSI Career Development Office</P>
+                <P>UMSI Career Development Office:</P>
+
                 <ul>
                     <li>Internships</li>
                     <li>CPT Approval</li>
                     <li>Resume/Cover Letter</li>
                     <li>Career Coaching</li>
                 </ul>
+            </div>
+        </section>
 
-            </section>
-        </div>
 
 
 
@@ -126,11 +138,30 @@
 
     </main>
     <footer>
-        <p>MSI Academic Advising | <a
+        <p><span id="year"></span> MSI Academic Advising | <a
                 href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
                 Advising </a></p>
     </footer>
 
 </body>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    
+    // Code provided by ChatGPT, OpenAI (2024). Adds hover effects to images including scaling and shadow.
+    // Retrieves all <img> elements, applies the scaling and shadow on hover, and resets on mouseout.
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.addEventListener('mouseover', () => {
+            img.style.transform = 'scale(1.1)'; // Scale the image slightly
+            img.style.transition = 'transform 0.3s ease'; // Smooth transition for scaling
+            img.style.boxShadow = '0 0 15px rgba(0, 0, 0, 0.3)'; // Add shadow effect
+        });
+
+        img.addEventListener('mouseout', () => {
+            img.style.transform = 'scale(1)'; // Reset the scale
+            img.style.boxShadow = 'none'; // Remove the shadow
+        });
+    });
+</script>
 
 </html>
