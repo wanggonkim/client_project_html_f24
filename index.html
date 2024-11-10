@@ -7,10 +7,32 @@
     <link rel="stylesheet" href="./css/html5reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Student Success Portal</title>
+    <style>
+        /* Code provided by ChatGPT, OpenAI (2024).*/
+        /* Style the button */
+        #scrollToTopButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4c4caf;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #scrollToTopButton:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 
 <body class="wrapper">
+
     <header>
+
         <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <div><a href="index.html">
                 <img src="images/UMSI_signature_marketing_U_white.png" alt="umsi logo" class="logo">
@@ -30,10 +52,12 @@
 
     <main class="container" id="main">
         <div class="griditem1">
-
+            
             <h2 id="congratulations">Welcome to the University of Michigan!</h2>
         </div>
+        
         <div class="griditem1">
+
             <br>
             <h3>We're here to help you thrive both in and out of the classroom!</h2>
                 <br>
@@ -46,6 +70,8 @@
                     <li>Life Outside Classroom</li>
                 </ol>
 
+
+    <script src="script.js"></script>
         </div>
         <section class="griditem2" id="Physical-Health">
 
@@ -119,6 +145,7 @@
                     services to ensure a comfortable living experience.</li>
             </ul>
         </section>
+        <button id="scrollToTopButton">Back to Top</button>
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
@@ -129,9 +156,13 @@
     </footer>
 
 </body>
+
+
 <script>
 
     document.getElementById("year").innerHTML = new Date().getFullYear();
+
+
     // Code provided by ChatGPT, OpenAI (2024). 
     // Retrieves the current year and displays a personalized greeting based on the time of day.
     function getWelcomeMessage() {
@@ -158,6 +189,19 @@
             img.style.boxShadow = 'none'; // Remove the shadow
         });
     });
+
+    // Code provided by ChatGPT, OpenAI (2024). Adds a smooth scroll effect to the "Back to Top" button.
+    const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+        // Add an event listener for the button click
+        scrollToTopButton.addEventListener("click", function() {
+            // Scroll to the top of the page
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Smooth scrolling effect
+            });
+        });
+
 </script>
 
 

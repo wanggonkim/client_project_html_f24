@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="./css/html5reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Student Success Portal</title>
+    <style>
+        /* Code provided by ChatGPT, OpenAI (2024).*/
+        /* Style the button */
+        #scrollToTopButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4c4caf;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #scrollToTopButton:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 
 <body class="wrapper">
@@ -132,7 +152,7 @@
                 </ul>
             </div>
         </section>
-
+        <button id="scrollToTopButton">Back to Top</button>
 
 
 
@@ -148,7 +168,7 @@
 </body>
 <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
-    
+
     // Code provided by ChatGPT, OpenAI (2024). Adds hover effects to images including scaling and shadow.
     // Retrieves all <img> elements, applies the scaling and shadow on hover, and resets on mouseout.
     const images = document.querySelectorAll('img');
@@ -164,6 +184,19 @@
             img.style.boxShadow = 'none'; // Remove the shadow
         });
     });
+
+    // Code provided by ChatGPT, OpenAI (2024). Adds a smooth scroll effect to the "Back to Top" button.
+    const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+    // Add an event listener for the button click
+    scrollToTopButton.addEventListener("click", function () {
+        // Scroll to the top of the page
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Smooth scrolling effect
+        });
+    });
+
 </script>
 
 </html>

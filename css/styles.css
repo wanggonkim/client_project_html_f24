@@ -1,3 +1,4 @@
+
 .skip a {
     position: absolute;
     left: 10px;
@@ -226,15 +227,9 @@ main {
     background-color: white;
 }
 
-
-
-
-
-
-
-
-
-
+img:hover{
+    filter: grayscale(100%); /* Apply grayscale on hover */
+}
 
 
 }
