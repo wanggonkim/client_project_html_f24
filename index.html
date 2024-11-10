@@ -13,8 +13,8 @@
     <header>
         <div class="skip"><a href="#main">Skip to Main Content</a></div>
         <div><a href="index.html">
-            <img src="images/UMSI_signature_marketing_U_white.png" alt="umsi logo" class="logo">
-        </a>
+                <img src="images/UMSI_signature_marketing_U_white.png" alt="umsi logo" class="logo">
+            </a>
         </div>
         <h1>UMSI Student Success Portal</h1>
 
@@ -127,39 +127,38 @@
                 href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic
                 Advising </a></p>
     </footer>
-    
+
 </body>
 <script>
 
     document.getElementById("year").innerHTML = new Date().getFullYear();
-// Code provided by ChatGPT, OpenAI (2024). 
-// Retrieves the current year and displays a personalized greeting based on the time of day.
+    // Code provided by ChatGPT, OpenAI (2024). 
+    // Retrieves the current year and displays a personalized greeting based on the time of day.
     function getWelcomeMessage() {
-    const hour = new Date().getHours();
-    if (hour < 12) return "Good morning";
-    if (hour < 18) return "Good afternoon";
-    return "Good evening";
-}
-document.querySelector('h2').textContent = `${getWelcomeMessage()}, Welcome to the University of Michigan!`
+        const hour = new Date().getHours();
+        if (hour < 12) return "Good morning";
+        if (hour < 18) return "Good afternoon";
+        return "Good evening";
+    }
+    document.querySelector('h2').textContent = `${getWelcomeMessage()}, Welcome to the University of Michigan!`
 
-const images = document.querySelectorAll('img');
+    const images = document.querySelectorAll('img');
 
-// Code provided by ChatGPT, OpenAI (2024). Adds hover effects to images including scaling and shadow.
-// Retrieves all <img> elements, applies the scaling and shadow on hover, and resets on mouseout.
-images.forEach(img => {
-    img.addEventListener('mouseover', () => {
-        img.style.transform = 'scale(1.1)'; // Scale the image slightly
-        img.style.transition = 'transform 0.3s ease'; // Smooth transition for scaling
-        img.style.boxShadow = '0 0 15px rgba(0, 0, 0, 0.3)'; // Add shadow effect
+    // Code provided by ChatGPT, OpenAI (2024). Adds hover effects to images including scaling and shadow.
+    // Retrieves all <img> elements, applies the scaling and shadow on hover, and resets on mouseout.
+    images.forEach(img => {
+        img.addEventListener('mouseover', () => {
+            img.style.transform = 'scale(1.1)'; // Scale the image slightly
+            img.style.transition = 'transform 0.3s ease'; // Smooth transition for scaling
+            img.style.boxShadow = '0 0 15px rgba(0, 0, 0, 0.3)'; // Add shadow effect
+        });
+
+        img.addEventListener('mouseout', () => {
+            img.style.transform = 'scale(1)'; // Reset the scale
+            img.style.boxShadow = 'none'; // Remove the shadow
+        });
     });
-
-    img.addEventListener('mouseout', () => {
-        img.style.transform = 'scale(1)'; // Reset the scale
-        img.style.boxShadow = 'none'; // Remove the shadow
-    });
-});
 </script>
 
 
 </html>
-
