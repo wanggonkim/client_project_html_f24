@@ -88,10 +88,14 @@ nav ul li a {
 
     border-radius: 5px;
 }
+/* add border for menu in active*/
 
-nav ul li a:hover {
-    background-color: #00274C;
+nav ul li a.active {
+    border: 2px solid #FFCB05; /* Border color for active link */
+    background-color: #00274C; /* Optional: change background to indicate active link */
 }
+
+
 
 /* Main content */
 main {
